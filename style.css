@@ -314,6 +314,32 @@ h1 {
   overflow-y: auto;
   font-size: 15px;
   margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.user-message {
+  align-self: flex-start;
+  background: #e6f1e6;
+  color: #23232d;
+  border-radius: 16px 16px 16px 4px;
+  padding: 8px 14px;
+  max-width: 75%;
+  margin-bottom: 2px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.assistant-message {
+  align-self: flex-end;
+  background: #3bb0ff;
+  color: #fff;
+  border-radius: 16px 16px 4px 16px;
+  padding: 8px 14px;
+  max-width: 75%;
+  margin-bottom: 2px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  text-align: left;
 }
 
 /* Thinking... animation for assistant */
@@ -333,17 +359,6 @@ h1 {
 @keyframes blink {
   0%, 80%, 100% { opacity: 0.5; }
   40% { opacity: 1; }
-}
-
-/* Make sure the Material Icons font is used and sized correctly */
-.material-icons-outlined.chatbot-icon {
-  font-family: 'Material Icons Outlined', 'Material Icons', Arial, sans-serif !important;
-  font-size: 32px !important;
-  color: #fff;
-  line-height: 1;
-  user-select: none;
-  pointer-events: none;
-  font-variation-settings: 'wght' 400;
 }
 
 /* Responsive styles */
